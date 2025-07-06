@@ -22,7 +22,7 @@ const SocialLinks = () => {
             <a
               className="link-item flex items-center justify-center w-full bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 hover:opacity-90 text-white font-semibold py-3 px-4 rounded-lg shadow-md"
               href="https://www.instagram.com/channel/AbbCs6u2YZqZkWjq/"
-              target="_blank" rel="noreferrer"
+              target="_blank" rel="noopener noreferrer"
             >
               <svg className="w-5 h-5 mr-2"
                 style={{ marginTop: "-6px" }}
@@ -36,7 +36,7 @@ const SocialLinks = () => {
             </a>
           </section>
           <div className="space-y-4 pt-4 border-t border-gray-700">
-            <a className="link-item flex items-center justify-center w-full bg-[#1DB954] hover:bg-green-700 text-white font-semibold py-3 px-4 rounded-lg shadow-md" href="https://open.spotify.com/user/12162886814?si=87a96cf80037465b" target="_blank" rel="noreferrer">
+            <a className="link-item flex items-center justify-center w-full bg-[#1DB954] hover:bg-green-700 text-white font-semibold py-3 px-4 rounded-lg shadow-md" href="https://open.spotify.com/user/12162886814?si=87a96cf80037465b" target="_blank" rel="noopener noreferrer">
               <svg
                 className="w-5 h-5 mr-2"
                 fill="currentColor"
@@ -47,7 +47,7 @@ const SocialLinks = () => {
               </svg>
               Spotify
             </a>
-            <a className="link-item flex items-center justify-center w-full bg-black hover:bg-[#292929] text-white font-semibold py-3 px-4 rounded-lg shadow-md" href="https://www.tiktok.com/@alondraesquiveliba" target="_blank" rel="noreferrer">
+            <a className="link-item flex items-center justify-center w-full bg-black hover:bg-[#292929] text-white font-semibold py-3 px-4 rounded-lg shadow-md" href="https://www.tiktok.com/@alondraesquiveliba" target="_blank" rel="noopener noreferrer">
               <svg
                 className="w-5 h-5 mr-2"
                 fill="currentColor"
@@ -58,7 +58,7 @@ const SocialLinks = () => {
               </svg>
               TikTok
             </a>
-            <a className="link-item flex items-center justify-center w-full bg-[#0078D4] hover:bg-[#00579D] text-white font-semibold py-3 px-4 rounded-lg shadow-md" href="mailto:alondraesquivelibarra13@gmail.com" target="_blank" rel="noreferrer" >
+            <a className="link-item flex items-center justify-center w-full bg-[#0078D4] hover:bg-[#00579D] text-white font-semibold py-3 px-4 rounded-lg shadow-md" href="mailto:alondraesquivelibarra13@gmail.com" target="_blank" rel="noopener noreferrer" >
               <svg
                 className="w-5 h-5 mr-2"
                 fill="currentColor"
