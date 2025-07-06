@@ -1,4 +1,4 @@
-# LaLondra Link Collection 🔗
+# lalondra Link Collection 🔗
 
 ¡Bienvenido al punto central de conexión con **LaLondra**!
 
