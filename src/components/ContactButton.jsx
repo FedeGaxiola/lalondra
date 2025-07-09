@@ -1,19 +1,20 @@
 import React, { useState } from 'react';
 
-function ContactButton() {
+
+function ContactButton({ email }) {
   const [buttonText, setButtonText] = useState('e-mail');
 
   const handleCopyEmail = () => {
-    navigator.clipboard.writeText('alondraesquivelibarra13@gmail.com')
+    navigator.clipboard.writeText(email)
       .then(() => {
         setButtonText('¡Copiado!');
         setTimeout(() => {
           setButtonText('e-mail');
-        }, 2000); // Vuelve al texto original después de 2 segundos
+        }, 2000);
       })
       .catch(err => {
         console.error('Error al copiar el correo: ', err);
-        setButtonText('Error al copiar'); // Mensaje de error si falla
+        setButtonText('Error al copiar');
         setTimeout(() => {
           setButtonText('e-mail');
         }, 3000);
