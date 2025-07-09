@@ -29,7 +29,7 @@ const SocialLinks = () => {
           {/* Instagram Feed */}
           <section>
             <div className={instaLoading ? 'invisible h-0' : ''}>
-              <InstagramEmbed onLoad={() => setInstaLoading(false)} />
+              <InstagramEmbed onLoad={() => setInstaLoading(false)} profileUrl="https://www.instagram.com/alondraesquiveliba/" />
             </div>
             <a
               className="link-item flex items-center justify-center w-full bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 hover:opacity-90 text-white font-semibold py-3 px-4 rounded-lg shadow-md"
@@ -70,7 +70,7 @@ const SocialLinks = () => {
               </svg>
               TikTok
             </a>
-            <ContactButton />
+            <ContactButton email="alondraesquivelibarra13@gmail.com" />
           </div>
         </main>
 
