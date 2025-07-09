@@ -1,10 +1,19 @@
 import "./../index.css"
 import ContactButton from "./ContactButton";
 import InstagramEmbed from "./InstagramEmbed";
+import React, { useState } from "react";
 
 const SocialLinks = () => {
+  const [instaLoading, setInstaLoading] = useState(true);
+
   return (
-    <div className="font-sans flex flex-col items-center justify-center min-h-screen p-4 sm:p-6 bg-[#6D9BA6]">
+    <div className="font-sans flex flex-col items-center justify-center min-h-screen p-4 sm:p-6 bg-[#6D9BA6] relative">
+      {instaLoading && (
+        <div className="fixed inset-0 z-50 flex flex-col items-center justify-center bg-black bg-opacity-60">
+          <span className="animate-spin rounded-full h-12 w-12 border-t-4 border-b-4 border-pink-500 mb-4"></span>
+          <span className="text-pink-200 text-lg font-semibold">Cargando...</span>
+        </div>
+      )}
       <div className="w-full max-w-md mx-auto bg-[#F2AEAE] rounded-xl shadow-2xl p-6 sm:p-8">
         <header className="flex flex-col items-center mb-8">
           <img
@@ -19,7 +28,9 @@ const SocialLinks = () => {
         <main className="space-y-6">
           {/* Instagram Feed */}
           <section>
-            <InstagramEmbed />
+            <div className={instaLoading ? 'invisible h-0' : ''}>
+              <InstagramEmbed onLoad={() => setInstaLoading(false)} />
+            </div>
             <a
               className="link-item flex items-center justify-center w-full bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 hover:opacity-90 text-white font-semibold py-3 px-4 rounded-lg shadow-md"
               href="https://www.instagram.com/channel/AbbCs6u2YZqZkWjq/"

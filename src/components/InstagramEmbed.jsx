@@ -1,13 +1,17 @@
 import React, { useEffect, useRef } from 'react';
 
-const InstagramEmbed = () => {
+const InstagramEmbed = ({ onLoad }) => {
   const containerRef = useRef(null);
 
   useEffect(() => {
     if (window.instgrm) {
       window.instgrm.Embeds.process();
+      // Instagram no tiene callback, así que usamos un pequeño timeout para simular el onLoad
+      setTimeout(() => {
+        if (onLoad) onLoad();
+      }, 1500);
     }
-  }, []);
+  }, [onLoad]);
 
   return (
     <div ref={containerRef} className="rounded-xl overflow-hidden shadow-lg">
