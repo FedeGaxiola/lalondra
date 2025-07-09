@@ -18,7 +18,7 @@ const SocialLinks = () => {
         <header className="flex flex-col items-center mb-8">
           <img
             className="w-28 h-28 sm:w-32 sm:h-32 rounded-full border-4 border-[#394A59] object-cover mb-4 shadow-lg"
-            src="https://p16-sign-sg.tiktokcdn.com/tos-alisg-avt-0068/544c4c80b4ad67f5358ef37fd847bc61~tplv-tiktokx-cropcenter:1080:1080.jpeg?dr=14579&refresh_token=0426dd8f&x-expires=1751875200&x-signature=TmAu9HcbCsQvqKrjPjZBQvDUU6E%3D&t=4d5b0474&ps=13740610&shp=a5d48078&shcp=81f88b70&idc=maliva"
+            src={process.env.PUBLIC_URL + "/lalondra_avatar.jpeg"}
             alt="lalondra Avatar"
           />
           <h1 className="text-2xl sm:text-3xl font-bold text-[#394A59]">lalondra</h1>
