@@ -6,6 +6,16 @@ import React, { useState } from "react";
 const SocialLinks = () => {
   const [instaLoading, setInstaLoading] = useState(true);
 
+  // Oculta el loading después de 3 segundos aunque InstagramEmbed no llame onLoad
+  React.useEffect(() => {
+    if (instaLoading) {
+      const timeout = setTimeout(() => {
+        setInstaLoading(false);
+      }, 3000);
+      return () => clearTimeout(timeout);
+    }
+  }, [instaLoading]);
+
   return (
     <div className="font-sans flex flex-col items-center justify-center min-h-screen p-4 sm:p-6 bg-[#6D9BA6] relative">
       {instaLoading && (
