@@ -2,9 +2,20 @@ import "./../index.css"
 import ContactButton from "./ContactButton";
 import InstagramEmbed from "./InstagramEmbed";
 import React, { useState } from "react";
+import { CONFIG } from "../config";
 
 const SocialLinks = () => {
   const [instaLoading, setInstaLoading] = useState(true);
+
+  // Oculta el loading después de 3 segundos aunque InstagramEmbed no llame onLoad
+  React.useEffect(() => {
+    if (instaLoading) {
+      const timeout = setTimeout(() => {
+        setInstaLoading(false);
+      }, 3000);
+      return () => clearTimeout(timeout);
+    }
+  }, [instaLoading]);
 
   return (
     <div className="font-sans flex flex-col items-center justify-center min-h-screen p-4 sm:p-6 bg-[#6D9BA6] relative">
@@ -29,11 +40,11 @@ const SocialLinks = () => {
           {/* Instagram Feed */}
           <section>
             <div className={instaLoading ? 'invisible h-0' : ''}>
-              <InstagramEmbed onLoad={() => setInstaLoading(false)} profileUrl="https://www.instagram.com/alondraesquiveliba/" />
+              <InstagramEmbed onLoad={() => setInstaLoading(false)} profileUrl={CONFIG.instagramProfile} />
             </div>
             <a
               className="link-item flex items-center justify-center w-full bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 hover:opacity-90 text-white font-semibold py-3 px-4 rounded-lg shadow-md"
-              href="https://www.instagram.com/channel/AbbCs6u2YZqZkWjq/"
+              href={CONFIG.instagramChannel}
               rel="noopener noreferrer"
             >
               <svg className="w-5 h-5 mr-2"
@@ -48,7 +59,7 @@ const SocialLinks = () => {
             </a>
           </section>
           <div className="space-y-4 pt-4 border-t border-gray-700">
-            <a className="link-item flex items-center justify-center w-full bg-[#1DB954] hover:bg-green-700 text-white font-semibold py-3 px-4 rounded-lg shadow-md" href="https://open.spotify.com/user/12162886814?si=87a96cf80037465b" rel="noopener noreferrer">
+            <a className="link-item flex items-center justify-center w-full bg-[#1DB954] hover:bg-green-700 text-white font-semibold py-3 px-4 rounded-lg shadow-md" href={CONFIG.spotify} rel="noopener noreferrer">
               <svg
                 className="w-5 h-5 mr-2"
                 fill="currentColor"
@@ -59,7 +70,7 @@ const SocialLinks = () => {
               </svg>
               Spotify
             </a>
-            <a className="link-item flex items-center justify-center w-full bg-black hover:bg-[#292929] text-white font-semibold py-3 px-4 rounded-lg shadow-md" href="https://www.tiktok.com/@alondraesquiveliba" rel="noopener noreferrer">
+            <a className="link-item flex items-center justify-center w-full bg-black hover:bg-[#292929] text-white font-semibold py-3 px-4 rounded-lg shadow-md" href={CONFIG.tiktok} rel="noopener noreferrer">
               <svg
                 className="w-5 h-5 mr-2"
                 fill="currentColor"
@@ -70,7 +81,7 @@ const SocialLinks = () => {
               </svg>
               TikTok
             </a>
-            <ContactButton email="alondraesquivelibarra13@gmail.com" />
+            <ContactButton email={CONFIG.email} />
           </div>
         </main>
 
