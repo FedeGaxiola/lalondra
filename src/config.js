@@ -8,4 +8,5 @@ export const CONFIG = {
   tiktok: "https://www.tiktok.com/@alondraesquiveliba",
   youtube: "https://www.youtube.com/@alondraesquivel6554",
   email: "alondraesquivelibarra13@gmail.com",
+  podcast: "https://open.spotify.com/show/1YrSxPpB6llYYStqkF3RSk?si=5VzPs7ZrS9WEYbd5LTyRgg",
 };
