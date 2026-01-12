@@ -6,7 +6,7 @@ export const CONFIG = {
   instagramChannel: "https://www.instagram.com/channel/AbbCs6u2YZqZkWjq/",
   spotify: "https://open.spotify.com/user/12162886814?si=87a96cf80037465b",
   tiktok: "https://www.tiktok.com/@alondraesquiveliba",
-  youtube: "https://www.youtube.com/@alondraesquivel6554",
+  youtube: "https://www.youtube.com/@alondraesquiveliba",
   email: "alondraesquivelibarra13@gmail.com",
   podcast: "https://open.spotify.com/show/1YrSxPpB6llYYStqkF3RSk?si=5VzPs7ZrS9WEYbd5LTyRgg",
 };
