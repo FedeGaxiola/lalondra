@@ -9,4 +9,5 @@ export const CONFIG = {
   youtube: "https://www.youtube.com/@alondraesquiveliba",
   email: "alondraesquivelibarra13@gmail.com",
   podcast: "https://open.spotify.com/show/1YrSxPpB6llYYStqkF3RSk?si=5VzPs7ZrS9WEYbd5LTyRgg",
+  groover: "https://groover.co/es/band/signup/referral/influencer/27143/?utm_source=widget&utm_medium=widget_banner&utm_campaign=0.lalondra&widget_id=27143",
 };
