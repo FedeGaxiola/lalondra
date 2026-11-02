@@ -13,7 +13,7 @@ Haz clic en los enlaces a continuación para conectar con LaLondra en tu platafo
 * **[TikTok](https://www.tiktok.com/@alondraesquiveliba)** - ¡No te pierdas sus últimos videos y tendencias!
 * **[Instagram](https://www.instagram.com/alondraesquiveliba)** - Explora sus fotos, historias y momentos del día a día.
 * **[Spotify](https://open.spotify.com/user/12162886814?si=7cc890a5c679428c)** - Descubre sus gustos musicales y sus playlists preferidas.
-* **[Correo Electrónico](mailto:alondraesquivelibarra13@gmail.com)** - Para colaboraciones o consultas profesionales.
+* **[Correo Electrónico](mailto:alondraesquiveliba13@hotmail.com)** - Para colaboraciones o consultas profesionales.
 
 ---
 

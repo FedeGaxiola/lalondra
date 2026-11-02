@@ -3,6 +3,10 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { applyPalette, pickPalette } from './palettes';
+
+// Un diseño distinto al azar en cada visita
+applyPalette(pickPalette());
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
