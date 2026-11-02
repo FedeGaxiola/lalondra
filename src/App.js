@@ -1,12 +1,8 @@
-import './App.css';
+import './styles/mixtape.css';
 import SocialLinks from './components/SocialLinks';
 
 function App() {
-  return (
-    <div>
-      <SocialLinks></SocialLinks>
-    </div>
-  );
+  return <SocialLinks />;
 }
 
 export default App;
